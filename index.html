@@ -1,29 +1,77 @@
 <!DOCTYPE html>
-<html>
-
-<head> 
-    <!-- The CSS/Design and look of the webpage -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Mountain</title>
     <style>
-        h1 {
-            font-size: 3em;
-            font-family: sans-serif;
-            text-align: center;
-        }
-
         body {
-            background-color: lime; /* Added missing semicolon */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #e0f7fa;
+        }
+        header {
+            background-color: #0277bd;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0277bd;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #0277bd;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
-
 <body>
-    <!-- The webpage's text, information, and pictures -->
-    <h1>All About Blue Mountain</h1>
-    <p>Have you ever wanted to go skiing? I know the perfect ski resort for you; Blue Mountain.<br>
-	Blue Mountain is a large mountain, with a small village with fun activities.<br>
-	You can go on roller coasters, ski down the hill (in winter, of course), eat ice cream, etc.<br> 
-	Blue Mountain is located in Ontario, Canada.</p>
+    <header>Welcome to Blue Mountain</header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container" id="about">
+        <h2>About Blue Mountain</h2>
+        <p>Blue Mountain is a stunning natural attraction known for its breathtaking views, hiking trails, and rich biodiversity.</p>
+    </div>
+    
+    <div class="container gallery" id="gallery">
+        <h2>Gallery</h2>
+        <img src="https://source.unsplash.com/300x200/?mountain" alt="Mountain Image">
+        <img src="https://source.unsplash.com/300x200/?nature" alt="Nature Image">
+        <img src="https://source.unsplash.com/300x200/?forest" alt="Forest Image">
+    </div>
+    
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@bluemountain.com</p>
+        <p>Phone: +1 234 567 890</p>
+    </div>
+    
+    <footer>
+        &copy; 2025 Blue Mountain. All rights reserved.
+    </footer>
 </body>
-
 </html>
